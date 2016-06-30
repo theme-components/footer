@@ -1,9 +1,9 @@
 {
-  "name": "footer",
+  "name": "vue-footer",
   "version": "1.0.0",
   "description": "The collection of footer components",
   "author": "Duoc Nguyen <nguyenvanduocit@gmail.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
