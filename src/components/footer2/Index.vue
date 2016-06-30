@@ -56,17 +56,14 @@
 
 <script>
   import 'bootstrap/scss/bootstrap-flex.scss'
-  export default {
-    data () {}
-  }
+  export default {}
 </script>
 
 <style lang="scss" scoped>
   footer {
-    width: 100vw;
+    width: 100%;
     .first-row{
       font: 14px/16px Roboto,sans-serif;
-      width: 100%;
       .linkboxs{
         display: flex;
         flex-wrap: wrap;
