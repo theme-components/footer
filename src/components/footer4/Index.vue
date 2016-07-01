@@ -43,13 +43,13 @@
     </footer>
 </template>
 <script>
-  import 'bootstrap/scss/_reboot.scss'
   import WebFont from 'webfontloader'
   WebFont.load({
     google: {
       families: ['Montserrat:400,700']
     }
   })
+  import 'bootstrap/scss/bootstrap-reboot.scss'
   export default{}
 </script>
 <style lang="scss" scoped>

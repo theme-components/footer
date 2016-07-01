@@ -55,7 +55,7 @@
 </template>
 
 <script>
-  import 'bootstrap/scss/_reboot.scss'
+  import 'bootstrap/scss/bootstrap-reboot.scss'
   export default {}
 </script>
 
@@ -64,6 +64,7 @@
     width: 100%;
     .first-row{
       font: 14px/16px Roboto,sans-serif;
+      display: block;
       .linkboxs{
         display: flex;
         flex-wrap: wrap;

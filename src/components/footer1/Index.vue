@@ -8,24 +8,26 @@
 </template>
 
 <script>
-  import 'bootstrap/scss/_reboot.scss'
+  import 'bootstrap/scss/bootstrap-reboot.scss'
   export default {
     props: {
       links: {
-        default: [
-          {
-            url: 'https://www.google.com/about/',
-            text: 'About Google'
-          },
-          {
-            url: 'https://www.google.com/policies/privacy/',
-            text: 'Privacy'
-          },
-          {
-            url: 'https://www.google.com/policies/terms/regional.html',
-            text: 'Terms'
-          }
-        ]
+        default () {
+          return [
+            {
+              url: 'https://www.google.com/about/',
+              text: 'About Google'
+            },
+            {
+              url: 'https://www.google.com/policies/privacy/',
+              text: 'Privacy'
+            },
+            {
+              url: 'https://www.google.com/policies/terms/regional.html',
+              text: 'Terms'
+            }
+          ]
+        }
       }
     }
   }
