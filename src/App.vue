@@ -7,13 +7,13 @@
       <nav>
         <ul>
           <li><a v-link="{ path: '/' }">Home</a></li>
-          <li><a v-link="{ path: '/footer' }">Footer Pack</a></li>
-          <li><a v-link="{ path: '/header' }">Header Pack</a></li>
-          
+          <li><a v-link="{ path: '/footers' }">Footer Pack</a></li>
+          <li><a v-link="{ path: '/headers' }">Header Pack</a></li>
+          <li><a v-link="{ path: '/cards' }">Card Pack</a></li>
+
         </ul>
       </nav>
     </div>
-
     <router-view></router-view>
   </div>
 </template>
@@ -26,7 +26,9 @@
     }
   })
   import 'bootstrap/scss/bootstrap-flex.scss'
-  import 'bootstrap/scss/bootstrap-reboot.scss'
+  export default{
+    replace: true
+  }
 </script>
 
 <style lang="scss">

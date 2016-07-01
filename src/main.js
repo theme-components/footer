@@ -3,25 +3,29 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 /* Import components */
-import App from './App'
-import Front from './Front'
-import Footer from './components/footer/Footer'
+import App from './App.vue'
+import Front from './components/Front.vue'
+import Footer from './components/Footer.vue'
+import Card from './components/Card.vue'
 
-/* eslint-disable no-new */
-new Vue({
-  el: 'body'
+var router = new VueRouter({
+  hashbang: false,
+  history: true
 })
-
-var router = new VueRouter()
 
 router.map({
   '/': {
     name: 'home',
     component: Front
   },
-  '/footer': {
+  '/footers': {
+    name: 'footer-pack',
     component: Footer
+  },
+  '/cards': {
+    name: 'card-pack',
+    component: Card
   }
 })
 
-router.start(App, '#app')
+router.start(App, 'app')

@@ -10,12 +10,12 @@
 </template>
 
 <script>
-  import Footer1 from './footer1/Index.vue'
-  import Footer2 from './footer2/Index.vue'
-  import Footer3 from './footer3/Index.vue'
-  import Footer4 from './footer4/Index.vue'
-  import Footer5 from './footer5/Index.vue'
-  import FooterLaracast from './footer-laracast/Index.vue'
+  import Footer1 from './footer/footer1/Index.vue'
+  import Footer2 from './footer/footer2/Index.vue'
+  import Footer3 from './footer/footer3/Index.vue'
+  import Footer4 from './footer/footer4/Index.vue'
+  import Footer5 from './footer/footer5/Index.vue'
+  import FooterLaracast from './footer/footer-laracast/Index.vue'
 
   export default {
     components: {
