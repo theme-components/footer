@@ -1,6 +1,18 @@
 <template>
   <div class="card-pack">
-    <card-1></card-1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <card-1></card-1>
+        </div>
+        <div class="col-md-4">
+          <card-1></card-1>
+        </div>
+        <div class="col-md-4">
+          <card-1></card-1>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -15,6 +27,6 @@
 </script>
 <style lang="scss" scoped>
   .card-pack{
-    padding: 50px;
+    padding: 50px 0;
   }
 </style>

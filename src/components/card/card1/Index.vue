@@ -3,8 +3,11 @@
     <div class="atvImg-container">
       <div class="atvImg-shadow"></div>
       <div class="atvImg-layers">
-        <div class="atvImg-rendered-layer layer-back" data-layer="0"></div>
-        <div class="atvImg-rendered-layer layer-front" data-layer="1">Xin chafo</div>
+        <div class="atvImg-rendered-layer background-layer" data-layer="0"></div>
+        <div class="front-layer">
+          <h1  class="atvImg-rendered-layer text-layout" data-layer="1">text layout</h1>
+          <h1  class="atvImg-rendered-layer text-layout" data-layer="1">text layout</h1>
+        </div>
       </div>
       <div class="atvImg-shine"></div>
     </div>
@@ -44,26 +47,33 @@
     overflow: hidden;
     transform-style: preserve-3d;
   }
-
-  .atvImg-rendered-layer {
-    position: absolute;
+  .background-layer, .front-layer{
     width: 100%;
     height: 100%;
+    position: absolute;
     top: 0;
     left: 0;
+  }
+  .atvImg-rendered-layer {
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
     background-size: cover;
     transition: all 0.1s ease-out;
   }
-  .layer-back{
+  .background-layer{
     background-image: url('assets/back.png');
   }
-  .layer-front{
-    background-image: url('assets/front.png');
+  .front-layer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-
+  .text-layout{
+    text-transform: uppercase;
+    color: #fff;
+  }
   .atvImg-shadow {
     position: absolute;
     top: 5%;
@@ -98,6 +108,7 @@
     methods: {
       processEnter (elem) {
         this.$container.addClass('over')
+        console.log('over')
       },
       processExit (elem) {
         this.$container.removeClass('over')
