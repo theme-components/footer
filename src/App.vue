@@ -6,6 +6,9 @@
     <footer-4></footer-4>
     <footer-laracast></footer-laracast>
     <footer-5></footer-5>
+    <div class="container card-container">
+        <card-1></card-1>
+    </div>
   </div>
 </template>
 <script>
@@ -17,6 +20,8 @@ import Footer3 from './components/footer3/Index.vue'
 import Footer4 from './components/footer4/Index.vue'
 import Footer5 from './components/footer5/Index.vue'
 import FooterLaracast from './components/footer-laracast/Index.vue'
+import Card1 from './components/card1/Index.vue'
+
 import 'bootstrap/scss/bootstrap-reboot.scss'
 
 export default {
@@ -26,7 +31,8 @@ export default {
     'footer-3': Footer3,
     'footer-laracast': FooterLaracast,
     'footer-4': Footer4,
-    'footer-5': Footer5
+    'footer-5': Footer5,
+    'card-1': Card1
   }
 }
 </script>
@@ -39,6 +45,9 @@ export default {
   }
   #app{
     width: 100%;
+    .card-container{
+      padding: 50px;
+    }
   }
   footer{
     &+footer{
