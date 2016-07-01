@@ -18,6 +18,7 @@
 </template>
 
 <script>
+  import 'bootstrap/scss/_reboot.scss'
   export default {}
 </script>
 
