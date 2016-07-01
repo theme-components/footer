@@ -1,6 +1,6 @@
 {
-  "name": "vue-footer",
-  "version": "1.0.0",
+  "name": "vue-component-pack",
+  "version": "1.0.1",
   "description": "The collection of footer components",
   "author": "Duoc Nguyen <nguyenvanduocit@gmail.com>",
   "private": false,
