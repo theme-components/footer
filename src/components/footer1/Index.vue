@@ -10,7 +10,6 @@
 </template>
 
 <script>
-  import 'bootstrap/scss/bootstrap-flex.scss'
   export default {}
 </script>
 
