@@ -8,6 +8,7 @@
 </template>
 
 <script>
+  import 'bootstrap/scss/_reboot.scss'
   export default {
     props: {
       links: {

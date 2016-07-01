@@ -43,6 +43,7 @@
     </footer>
 </template>
 <script>
+  import 'bootstrap/scss/_reboot.scss'
   import WebFont from 'webfontloader'
   WebFont.load({
     google: {
