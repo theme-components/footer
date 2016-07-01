@@ -20,7 +20,7 @@ footer {
   color: #9e9e9e;
   padding: 40px 40px;
   font-family: "Montserrat-Regular","RobotoDraft","Helvetica",arial,sans-serif;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

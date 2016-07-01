@@ -17,7 +17,8 @@
     "bootstrap": "4.0.0-alpha.2",
     "node-sass": "3.8.0",
     "sass-loader": "4.0.0",
-    "vue": "^1.0.21"
+    "vue": "^1.0.21",
+    "webfontloader": "1.6.24"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
