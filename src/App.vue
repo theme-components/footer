@@ -1,34 +1,32 @@
 <template>
   <div id="app">
-    <footer-1></footer-1>
-    <footer-2></footer-2>
-    <footer-3></footer-3>
-    <footer-4></footer-4>
-    <footer-laracast></footer-laracast>
-    <footer-5></footer-5>
+    <div id="main-navigation">
+      <h1 class="logo">
+        <a v-link="{ path: '/' }">Vue Component Pack</a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a v-link="{ path: '/' }">Home</a></li>
+          <li><a v-link="{ path: '/footer' }">Footer Pack</a></li>
+          <li><a v-link="{ path: '/header' }">Header Pack</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+
+    <router-view></router-view>
   </div>
 </template>
+
 <script>
-import 'bootstrap/scss/bootstrap-flex.scss'
-
-import Footer1 from './components/footer1/Index.vue'
-import Footer2 from './components/footer2/Index.vue'
-import Footer3 from './components/footer3/Index.vue'
-import Footer4 from './components/footer4/Index.vue'
-import Footer5 from './components/footer5/Index.vue'
-import FooterLaracast from './components/footer-laracast/Index.vue'
-import 'bootstrap/scss/bootstrap-reboot.scss'
-
-export default {
-  components: {
-    'footer-1': Footer1,
-    'footer-2': Footer2,
-    'footer-3': Footer3,
-    'footer-laracast': FooterLaracast,
-    'footer-4': Footer4,
-    'footer-5': Footer5
-  }
-}
+  import WebFront from 'webfontloader'
+  WebFront.load({
+    google: {
+      families: ['Lato:400,700']
+    }
+  })
+  import 'bootstrap/scss/bootstrap-flex.scss'
+  import 'bootstrap/scss/bootstrap-reboot.scss'
 </script>
 
 <style lang="scss">
@@ -36,10 +34,56 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Lato", sans-serif !important;
   }
+
   #app{
     width: 100%;
   }
+
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+  }
+
+  /* MAIN NAVIGATION */
+  #main-navigation {
+    padding: 0 15px;
+    background: #212121;
+    .logo {
+      float: left;
+      margin-top: 10px;
+      a {
+        color: #fff;
+        font-weight: 700;
+        font-size: .9em;
+      }
+    }
+    nav {
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-flow: row wrap;
+        list-style: none;
+        li {
+          a {
+            display: inline-block;
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            &:hover {
+              color: #00ACC1;
+            }
+          }
+          &.active a {
+             color: #00ACC1;
+          }
+        }
+      }
+    }
+  }
+
   footer{
     &+footer{
       margin-top: 60px;
