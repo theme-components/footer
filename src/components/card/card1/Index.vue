@@ -15,7 +15,7 @@
 </template>
 <style lang="scss" scoped>
   .atvImg {
-    width: 320px;
+    width: 100%;
     height: 190px;
     border-radius: 5px;
     transform-style: preserve-3d;
