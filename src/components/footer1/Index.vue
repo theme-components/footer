@@ -2,15 +2,32 @@
   <footer class="footer">
     <div class="logo"></div>
     <ul class="links">
-      <li><a target="_blank" href="https://www.google.com/about/">About Google</a></li>
-      <li><a target="_blank" href="https://www.google.com/policies/privacy/">Privacy</a></li>
-      <li><a target="_blank" href="https://www.google.com/policies/terms/regional.html">Terms</a></li>
+      <li v-for="link in links"><a target="_blank" :href="link.url" v-text="link.text"></a></li>
     </ul>
   </footer>
 </template>
 
 <script>
-  export default {}
+  export default {
+    props: {
+      links: {
+        default: [
+          {
+            url: 'https://www.google.com/about/',
+            text: 'About Google'
+          },
+          {
+            url: 'https://www.google.com/policies/privacy/',
+            text: 'Privacy'
+          },
+          {
+            url: 'https://www.google.com/policies/terms/regional.html',
+            text: 'Terms'
+          }
+        ]
+      }
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
