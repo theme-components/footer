@@ -24,6 +24,7 @@
 
 <style lang="scss" scoped>
   footer {
+    color: #444;
     nav.footer{
       padding: 30px;
       background: #202121;
