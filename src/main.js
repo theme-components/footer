@@ -6,6 +6,7 @@ Vue.use(VueRouter)
 import App from './App.vue'
 import Front from './components/Front.vue'
 import Footer from './components/Footer.vue'
+import Header from './components/Header.vue'
 import Card from './components/Card.vue'
 
 var router = new VueRouter({
@@ -21,6 +22,10 @@ router.map({
   '/footers': {
     name: 'footer-pack',
     component: Footer
+  },
+  '/headers': {
+    name: 'header-pack',
+    component: Header
   },
   '/cards': {
     name: 'card-pack',
