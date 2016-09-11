@@ -10,6 +10,7 @@
           <li><a v-link="{ path: '/footers' }">Footer Pack</a></li>
           <li><a v-link="{ path: '/headers' }">Header Pack</a></li>
           <li><a v-link="{ path: '/cards' }">Card Pack</a></li>
+          <li><a v-link="{ path: '/carts' }">Cart Pack</a></li>
 
         </ul>
       </nav>

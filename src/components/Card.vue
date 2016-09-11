@@ -17,7 +17,6 @@
 </template>
 
 <script>
-  import 'bootstrap/scss/bootstrap-reboot.scss'
   import Card1 from './card/card1/Index.vue'
   export default {
     components: {
@@ -26,6 +25,7 @@
   }
 </script>
 <style lang="scss" scoped>
+  @import "./../../node_modules/bootstrap/scss/bootstrap-flex.scss";
   .card-pack{
     padding: 50px 0;
   }

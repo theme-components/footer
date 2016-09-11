@@ -8,6 +8,7 @@ import Front from './components/Front.vue'
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
 import Card from './components/Card.vue'
+import Cart from './components/Cart.vue'
 
 var router = new VueRouter({
   hashbang: false,
@@ -30,6 +31,10 @@ router.map({
   '/cards': {
     name: 'card-pack',
     component: Card
+  },
+  '/carts': {
+    name: 'cart-pack',
+    component: Cart
   }
 })
 
