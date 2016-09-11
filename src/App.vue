@@ -25,18 +25,17 @@
       families: ['Lato:400,700']
     }
   })
-  import 'bootstrap/scss/bootstrap-flex.scss'
   export default{
     replace: true
   }
 </script>
-
-<style lang="scss">
+<style lang="scss" scoped>
+  @import "./../node_modules/bootstrap/scss/bootstrap-flex.scss";
   body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Lato", sans-serif !important;
+    font-family: "Lato", sans-serif;
   }
 
   #app{

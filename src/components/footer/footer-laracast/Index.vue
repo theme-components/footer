@@ -106,13 +106,13 @@
 </template>
 
 <script>
-  import WebFont from 'webfontloader'
-  WebFont.load({
-    google: {
-      families: ['Lato:400,700']
-    }
-  })
-  export default{}
+import WebFont from 'webfontloader'
+WebFont.load({
+  google: {
+    families: ['Lato:400,700']
+  }
+})
+export default{}
 </script>
 
 <style lang="scss" scoped>
